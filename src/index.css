@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@600;700&display=swap');
+
+:root {
+  font-family: 'DM Sans', system-ui, sans-serif;
+  color: #172033;
+  background: #eef3ff;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  min-width: 320px;
+  min-height: 100vh;
+  margin: 0;
+  background:
+    radial-gradient(circle at 8% 8%, rgba(130, 108, 255, 0.22), transparent 28rem),
+    radial-gradient(circle at 94% 92%, rgba(33, 191, 167, 0.18), transparent 25rem),
+    #f7f9ff;
+}
+
+#root, #root > div, .min-h-screen { min-height: 100vh; }
+.flex { display: flex; }
+.items-center { align-items: center; }
+.justify-center { justify-content: center; }
+.flex-grow, .flex-1 { flex: 1; }
+.p-4 { padding: 1.5rem; }
+.p-6 { padding: 2rem; }
+.p-3 { padding: 0.85rem; }
+.w-full { width: 100%; }
+.max-w-md { max-width: 34rem; }
+.rounded-lg { border-radius: 1.5rem; }
+.rounded-md { border-radius: 0.85rem; }
+.bg-white { background: rgba(255, 255, 255, 0.9); }
+.shadow-lg { box-shadow: 0 24px 70px rgba(46, 58, 109, 0.16); }
+.text-center { text-align: center; }
+.text-2xl { font-size: 1.9rem; }
+.font-bold { font-weight: 700; }
+.mb-4 { margin-bottom: 1.5rem; }
+.mt-4 { margin-top: 1.25rem; }
+.text-blue-600 { color: #4d46d8; }
+
+/* Ana kart */
+.min-h-screen > .bg-white {
+  border: 1px solid rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(16px);
+}
+
+h1 {
+  margin-top: 0;
+  font-family: 'Space Grotesk', 'DM Sans', sans-serif;
+  letter-spacing: -0.06em;
+}
+
+form.flex {
+  align-items: stretch;
+  gap: 0.65rem;
+  margin-bottom: 1.25rem;
+}
+
+input[type='text'] {
+  min-width: 0;
+  border: 1px solid #dce2f2;
+  border-radius: 0.8rem;
+  outline: none;
+  background: #fff;
+  color: #172033;
+  font: inherit;
+  transition: border-color 160ms ease, box-shadow 160ms ease;
+}
+
+form input[type='text'] { padding: 0.8rem 0.9rem; }
+input[type='text']::placeholder { color: #98a2ba; }
+input[type='text']:focus {
+  border-color: #7069ee;
+  box-shadow: 0 0 0 4px rgba(112, 105, 238, 0.14);
+}
+
+button {
+  border: 0;
+  border-radius: 0.8rem;
+  font: inherit;
+  font-weight: 700;
+  cursor: pointer;
+  transition: transform 160ms ease, filter 160ms ease, background 160ms ease;
+}
+
+button:hover { filter: brightness(0.96); transform: translateY(-1px); }
+button:active { transform: translateY(0); }
+
+form button {
+  padding: 0.75rem 1rem;
+  background: linear-gradient(135deg, #6059e8, #8078f7);
+  color: #fff;
+  box-shadow: 0 7px 16px rgba(96, 89, 232, 0.24);
+}
+
+.text-gray-500 { color: #7c849b; }
+.space-y-3 {
+  display: grid;
+  gap: 0.7rem;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.space-y-3 > li {
+  border: 1px solid #e7eaf4;
+  border-radius: 1rem;
+  background: #f9faff;
+  box-shadow: 0 3px 10px rgba(31, 44, 86, 0.04);
+  transition: box-shadow 180ms ease, transform 180ms ease;
+}
+
+.space-y-3 > li:hover {
+  box-shadow: 0 8px 20px rgba(31, 44, 86, 0.08);
+  transform: translateY(-1px);
+}
+
+.justify-between { justify-content: space-between; }
+.mr-3 { margin-right: 0.75rem; }
+.ml-4 { margin-left: 1rem; }
+.space-x-2 { gap: 0.35rem; }
+.w-5, .h-5 { width: 1.15rem; height: 1.15rem; }
+
+input[type='checkbox'] {
+  appearance: none;
+  border: 2px solid #b9bfd4;
+  border-radius: 0.35rem;
+  background: #fff;
+  cursor: pointer;
+  transition: background 150ms ease, border-color 150ms ease;
+}
+
+input[type='checkbox']:checked {
+  border-color: #35b99f;
+  background: #35b99f url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath d='m3 8 3 3 7-7' fill='none' stroke='white' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'/%3E%3C/svg%3E") center / 0.8rem no-repeat;
+}
+
+.bg-green-50 { background: #f0fbf7 !important; }
+.border-green-200 { border-color: #b8eadb !important; }
+.line-through { text-decoration: line-through; }
+.text-gray-400 { color: #99a5a5; }
+.text-gray-800 { color: #283142; }
+.text-yellow-500 { color: #bb7800; }
+.text-green-500 { color: #19896f; }
+.text-red-500 { color: #da4560; }
+.space-x-2 button { padding: 0.35rem 0.45rem; background: transparent; }
+.focus\:outline-none:focus { outline: none; }
+
+@media (max-width: 480px) {
+  .p-4 { padding: 1rem; }
+  .p-6 { padding: 1.4rem; }
+  .text-2xl { font-size: 1.6rem; }
+  .space-y-3 > li { align-items: flex-start; }
+  .space-x-2 { flex-direction: column; align-items: flex-end; }
+}
